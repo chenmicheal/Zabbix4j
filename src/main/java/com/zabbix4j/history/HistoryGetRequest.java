@@ -42,7 +42,7 @@ public class HistoryGetRequest extends ZabbixApiRequest {
         }
 
         public void addItemId(Integer id) {
-            itemids = ZbxListUtils.add(hostids, id);
+            itemids = ZbxListUtils.add(itemids, id);
         }
 
         public Date getTimeFromDate() {
@@ -75,28 +75,28 @@ public class HistoryGetRequest extends ZabbixApiRequest {
         public void setItemids(List<Integer> itemids) {
             this.itemids = itemids;
         }
-
         public Long getTime_from() {
-            return time_from;
+            return time_from*1000;
         }
 
         public void setTime_from(Long time_from) {
-            this.time_from = time_from;
+            this.time_from = time_from/1000;
         }
 
         public Long getTime_till() {
-            return time_till;
+            return time_till*1000;
         }
 
         public void setTime_till(Long time_till) {
-            this.time_till = time_till;
+            this.time_till = time_till/1000;
         }
 
         public Date getTimeTillDate() {
             if (time_till != null && time_till != 0) {
-                return new Date(time_till);
+                return new Date(time_till*1000);
             }
             return null;
         }
+
     }
 }
