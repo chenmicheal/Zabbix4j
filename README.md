@@ -1,4 +1,5 @@
 #Zabbix4j
+#Forked and fix some bugs.
 
 [![Gitter](https://badges.gitter.im/0312birdzhang/Zabbix4j.svg)](https://gitter.im/0312birdzhang/Zabbix4j?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Build Status](https://travis-ci.org/0312birdzhang/Zabbix4j.svg?branch=master)](https://travis-ci.org/0312birdzhang/Zabbix4j)
